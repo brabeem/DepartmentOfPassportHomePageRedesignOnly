@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of Passports - Nepal (Redesigned)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Top Bar (Motto, Search, Language, Social) -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="motto">Our Motto: Quality, Transparency and Citizen-Friendly Service</div>
+            <div class="top-bar-right">
+                <a href="#" class="search-lost-passport"><i class="fas fa-search"></i> Search Lost Passport</a>
+                <div class="language-switcher">
+                    <img src="images/flag-nepal.png" alt="Nepali Flag" style="width:20px; display:none;"> <!-- Add actual flag -->
+                    <select name="language" id="language">
+                        <option value="en">English</option>
+                        <option value="ne">नेपाली</option>
+                    </select>
+                </div>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-area">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Department of Passports Logo" class="logo">
+                    <div>
+                        <h1>Department of Passports</h1>
+                        <p>Ministry of Foreign Affairs, Government of Nepal</p>
+                    </div>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <button class="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">About Us <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Introduction of DOP</a></li>
+                            <li><a href="#">Organizational Chart</a></li>
+                            <li><a href="#">Former Director Generals</a></li>
+                            <li><a href="#">Staff List</a></li>
+                            <li><a href="#">ISO 9001:2015</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Acts & Rules <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Passport Procedures, 2078</a></li>
+                            <li><a href="#">Passport Regulations, 2077</a></li>
+                            <li><a href="#">Passport Act, 2076</a></li>
+                            <li><a href="#">Passport Directives (First Amendment), 2071</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Citizens Charter</a></li>
+                    <li><a href="#">Downloads</a></li>
+                    <li><a href="#">News & Notices</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Notice Bar -->
+        <section class="notice-bar-section">
+            <div class="container">
+                <strong>Notice:</strong> <a href="#">विभागमा विद्युतीय राहदानीका लागि Pre-enrollment गर्ने व्यक्तिले लिने विवरणहरु यहाँ क्लिक गर्नुहोस्।</a>
+            </div>
+        </section>
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <h2>Welcome to the Department of Passports</h2>
+                <p>Apply for your ePassport, check your application status, and find important information.</p>
+                <div class="hero-actions">
+                    <a href="#" class="btn btn-primary">Apply for ePassport</a>
+                    <a href="#check-status" class="btn btn-secondary">Check Passport Status</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Check Passport Status Section -->
+        <section id="check-status" class="status-check-section section-padding">
+            <div class="container">
+                <h3>Check Latest Passport Status</h3>
+                <form class="status-form">
+                    <label for="reference-number">Enter Reference Number</label>
+                    <input type="text" id="reference-number" name="reference-number" placeholder="e.g., NPL001234567">
+                    <button type="submit" class="btn btn-primary">Check Status</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- E-Services Section -->
+        <section class="e-services-section section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">Explore e-Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <img src="images/apply_for_epassport.png" alt="Apply for ePassport">
+                        <h3>Apply for ePassport</h3>
+                        <p> विद्युतीय राहदानीको लागि आवेदन दिनुहोस्। Find, download, fill out and print forms.</p>
+                        <a href="#" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/payment_service.png" alt="Online Payment">
+                        <h3>Online Payment</h3>
+                        <p>Welcome to Department of Passports payment portal.</p>
+                        <a href="#" class="read-more">Pay Online <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/search_for_lost_document.png" alt="Search Lost Documents">
+                        <h3>Search Lost Documents</h3>
+                        <p>Locate a passport acceptance facility near you or report a lost document.</p>
+                        <a href="#" class="read-more">Search Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/application_form.png" alt="Application Form Info">
+                        <h3>Application Form</h3>
+                        <p>Sample of online application form and guidelines.</p>
+                        <a href="#" class="read-more">View Form <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Information and FAQ Section -->
+        <section class="info-faq-section section-padding">
+            <div class="container">
+                <div class="info-faq-grid">
+                    <div class="info-column">
+                        <h2 class="section-title">Information Corner</h2>
+                        <ul class="info-list">
+                            <li><a href="#"><i class="fas fa-check-circle"></i> Important information on ePassports</a></li>
+                            <li><a href="#"><i class="fas fa-check-circle"></i> Online Pre-enrollment Application Form Fill Up Procedure</a></li>
+                            <li><a href="#"><i class="fas fa-check-circle"></i> e-Passport Revenue for Department of Passports</a></li>
+                            <li><a href="#"><i class="fas fa-check-circle"></i> ISO 3166-1-alpha-3 for Personalization of Place of Birth</a></li>
+                            <li><a href="#"><i class="fas fa-check-circle"></i> Documents required for e-Passport application</a></li>
+                            <li><a href="#"><i class="fas fa-check-circle"></i> Documents required for Official, service and Diplomatic Passport</a></li>
+                        </ul>
+                        <a href="#" class="btn btn-outline">View All Information</a>
+                    </div>
+                    <div class="faq-column">
+                        <h2 class="section-title">Frequently Asked Questions</h2>
+                        <div class="faq-item">
+                            <button class="faq-question">How long does it take to get an ePassport from the Department? <i class="fas fa-chevron-down"></i></button>
+                            <div class="faq-answer">
+                                <p>Detailed answer here...</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">From where can we apply for regular ePassport services? <i class="fas fa-chevron-down"></i></button>
+                            <div class="faq-answer">
+                                <p>Detailed answer here...</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">How long does it take to get an electronic passport after doing live enrollment in the districts? <i class="fas fa-chevron-down"></i></button>
+                            <div class="faq-answer">
+                                <p>Detailed answer here...</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-outline">More FAQs</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ePassport Video Section -->
+        <section class="video-section section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">Short Movie - ePassport</h2>
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <!-- Replace YOUR_VIDEO_ID with the actual ID from the YouTube URL -->
+                </div>
+                <div class="handbook-download">
+                    <h3>e-Passport Related Information Handbook</h3>
+                    <p>विद्युतीय राहदानी जानकारीमूलक पुस्तिका - २०७९</p>
+                    <a href="assets/documents/epassport-handbook.pdf" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i> Download Handbook
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- News & Notices Section -->
+        <section class="news-notices-section section-padding">
+            <div class="container">
+                <h2 class="section-title">News, Notices & Press Releases</h2>
+                <div class="news-grid">
+                    <!-- Repeat this card structure for each news item -->
+                    <article class="news-card">
+                        <img src="images/news_article.png" alt="News Title 1">
+                        <div class="news-content">
+                            <span class="news-date">2023-07-30 11:09:28</span>
+                            <h3><a href="#">विभागको सूचना (Sample News Title)</a></h3>
+                            <p>Brief description of the news or notice goes here. Keep it concise...</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <img src="images/news_article.png" alt="News Title 2">
+                        <div class="news-content">
+                            <span class="news-date">2023-06-16 10:15:19</span>
+                            <h3><a href="#">राहदानी दस्तुर सम्बन्धी सहुलियत (Another Sample)</a></h3>
+                            <p>Another brief description. This section will showcase the latest updates.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <img src="images/news_article.png" alt="Press Release Title">
+                        <div class="news-content">
+                            <span class="news-date">2023-05-14 04:41:55</span>
+                            <h3><a href="#">Notice for Opening of Financial Bids (Press Release)</a></h3>
+                            <p>Details about the press release. This makes it easy for users to find updates.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <div class="text-center">
+                    <a href="#" class="btn btn-outline">View All News & Notices</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet Officials Section -->
+        <section class="officials-section section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">Meet Our Officials</h2>
+                <div class="officials-grid">
+                    <div class="official-card">
+                        <img src="images/person.png" alt="Mr. Tirtha Raj Aryal">
+                        <h4>Mr. Tirtha Raj Aryal</h4>
+                        <p class="official-title">Director General</p>
+                        <p><i class="fas fa-envelope"></i> dg@nepalpassport.gov.np</p>
+                        <p><i class="fas fa-phone"></i> (+977) 15970329</p>
+                    </div>
+                    <div class="official-card">
+                        <img src="images/person.png" alt="Mr. Shatrudhwan Pokharel">
+                        <h4>Mr. Shatrudhwan Pokharel</h4>
+                        <p class="official-title">Director/Spokesperson</p>
+                        <p><i class="fas fa-envelope"></i> spokesperson@nepalpassport.gov.np</p>
+                        <p><i class="fas fa-phone"></i> (+977) XXXXXXXX</p>
+                    </div>
+                    <div class="official-card">
+                        <img src="images/person.png" alt="Mr. Uttam Ghimire">
+                        <h4>Mr. Uttam Ghimire</h4>
+                        <p class="official-title">Information Officer</p>
+                        <p><i class="fas fa-envelope"></i> info.officer@nepalpassport.gov.np</p>
+                        <p><i class="fas fa-phone"></i> (+977) YYYYYYYY</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer section-padding">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Ministry of Foreign Affairs</a></li>
+                        <li><a href="#">Department of Consular Services</a></li>
+                        <li><a href="#">Department of Foreign Employment</a></li>
+                        <li><a href="#">Nepalese Mission with Concurrent Accreditation</a></li>
+                        <li><a href="#">Ministry of Home Affairs</a></li>
+                        <li><a href="#">Department of Immigration</a></li>
+                        <li><a href="#">Department of National ID and Civil Registration</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Department of Passports, Tripureshwor, Kathmandu, Nepal</p>
+                    <p><i class="fas fa-phone"></i> Enquiry: +97715970330</p>
+                    <p><i class="fas fa-envelope"></i> communication@nepalpassport.gov.np</p>
+                    <p><i class="fas fa-envelope"></i> dg@nepalpassport.gov.np</p>
+                     <h4>Follow Us</h4>
+                    <div class="social-icons-footer">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Download Mobile App</h4>
+                    <div class="app-download-buttons">
+                        <a href="#"><img src="images/google_play.png" alt="Get it on Google Play"></a>
+                        <a href="#"><img src="images/ios.png" alt="Download on the App Store"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-text">
+                <p>© <span id="currentYear"></span> Department of Passports, Government of Nepal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
